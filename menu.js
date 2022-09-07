@@ -102,6 +102,47 @@ console.log(`category: ${category}`);
 
 //CODE HERE
 
+const foodArr = [
+    cheesePizza = {
+        name : 'cheese pizza',
+        price : 8.5,
+        category : 'entree',
+        popularity : 6,
+        rating : 7.8,
+        tags : ['cheese', 'delivery', 'mozzarella']
+    },
+    veggiePizza = {
+        name : 'veggie pizza',
+        price: 9,
+        category : 'entree',
+        popularity : 10,
+        rating : 9.9,
+        tags : ['vegan', 'veggie lovers', 'delivery', 'takeout']
+    },
+    meatLoversPizza = {
+        name : 'meat lovers pizza',
+        price : 12,
+        category : 'entre',
+        popularity : 2,
+        rating : 1.1,
+        tags : ['meat', 'meat lovers', 'its pizza time']
+    },
+    cheeseSticks = {
+        name : 'cheese sticks',
+        price : 10,
+        category : 'appetizer',
+        popularity : 10,
+        rating : 9.8,
+        tags : ['dipping sauce', 'cheese', 'best']
+    },
+    cinnamonSticks = {
+        name : 'cinnamo sticks',
+        price : 7,
+        category : 'dessert',
+        popularity : 7,
+        rating : 8.5,
+        tags : ['yum', 'dessert', 'sugar']
+    }];
 
 
 //////////////////PROBLEM 4////////////////////
@@ -118,9 +159,21 @@ console.log(`category: ${category}`);
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+//const filteredFood = foodArr.filter(tag) =>  
+function filteredFood (arr, tag) {
+    const returnArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].tags.length; j++) {
+            if (tag === arr[i].tags[j]) {
+                returnArr.push(arr[i]);
+            }
+        }
+    }
+    return returnArr;
 
+}
 
+console.log(filteredFood(foodArr, 'cheese'));
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -163,8 +216,18 @@ console.log(`category: ${category}`);
 
 //CODE HERE
 
+function filterByProperty (property, number, type, callBack) {
+    const filteredArr = [];
+
+    
+}
+//this is the callback function for the above function
+function aboveOrBelow (type) {
+
+}
 
 /*
+ 
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
 
@@ -172,3 +235,4 @@ console.log(`category: ${category}`);
 */
 
 //CODE HERE
+
