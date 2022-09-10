@@ -35,9 +35,11 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((sumOfFood, cart) => {
+    return sumOfFood + cart.price;
+}, 0);
 
-
+console.log(summedPrice)
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -55,7 +57,12 @@ const cart = [
 
 //CODE HERE
 
-
+function calcFinalPrice (cartTotal, couponValue, tax) {
+    finalPrice = cartTotal * tax;
+    finalPrice += cartTotal;
+    finalPrice -= couponValue;
+    return finalPrice;
+}
 
 //////////////////PROBLEM 3////////////////////
 /*  

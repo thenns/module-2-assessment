@@ -216,14 +216,19 @@ console.log(filteredFood(foodArr, 'cheese'));
 
 //CODE HERE
 
-function filterByProperty (property, number, type, callBack) {
+function filterByProperty (property, number, type) {
     const filteredArr = [];
-
+    if (type === 'above') {
+        for (let i = 0; i < 
+    }
     
 }
 //this is the callback function for the above function
+//not done yet
 function aboveOrBelow (type) {
-
+    if (type === 'above') {
+        return null;
+    }
 }
 
 /*
