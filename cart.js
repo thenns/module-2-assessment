@@ -86,6 +86,14 @@ function calcFinalPrice (cartTotal, couponValue, tax) {
 
 /*
     TEXT ANSWER HERE
+    The customer object needs a customer name, 
+    customer email, cusotmer address, customer phone number,
+    purchase history, preferred order.
+    The customer name is important so we know who the customer is. This will be a string.
+    The email will probably be the way the user logs in to their account. This will be a string as well.
+    The address should be saved for deliveries and billing information. The address will also be a string.
+    The phone number is good to have in case you need to contact them. This could be an integer, but since
+    we don't need to manipulate it, it will be a string.
 
 */
 
@@ -95,3 +103,9 @@ function calcFinalPrice (cartTotal, couponValue, tax) {
 */
 
 //CODE HERE
+let customer = {
+    customerName: "sam m",
+    customerAddress: "123 hello st",
+    customerEmail: "sam@email.com",
+    customerPhone: "555-555-5555",
+}
