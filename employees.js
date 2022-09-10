@@ -21,6 +21,17 @@
 
 //CODE HERE
 
+class Employee {
+    constructor (name, shifts) {
+        this.name = name;
+        this.shifts = shifts;
+    }
+    getSchedule (obj) {
+        if (this.name === obj.name && this.shifts === obj.shifts) {
+            console.log(`${this.name} works on ${this.shifts}`);
+        }
+    }
+}
 
 
 /*
@@ -35,6 +46,8 @@
 
 //CODE HERE
 
+const empOne = new Employee ('Jess', 'weekday mornings, weekday afternoons');
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
@@ -42,6 +55,7 @@
 
 //CODE HERE
 
+empOne.getSchedule(empOne);
 
 /*
     Make a copy of the empOne object
@@ -57,7 +71,8 @@
 
 //CODE HERE
 
-
+const empTwo = { ...empOne };
+empTwo.name = 'Nick';
 
 //////////////////PROBLEM 2////////////////////
 /*  
