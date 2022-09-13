@@ -51,8 +51,7 @@ const pizza = {
 
 //CODE HERE
 
-//console.log(`The ${pizza.name} is rated ${pizza.rating}`);
-//UNCOMMENT WHEN DONE
+console.log(`The ${pizza.name} is rated ${pizza.rating}`);
 /*
     Second, log the second tag in your pizza's
     tags array.
@@ -62,8 +61,7 @@ const pizza = {
 
 //CODE HERE
 
-//console.log(`pizza tag: ${pizza.tags[1]}`);
-//UNCOMMENT WHEN DONE
+console.log(`pizza tag: ${pizza.tags[1]}`);
 
 /*
     Third, destructure the price off of the
@@ -75,8 +73,7 @@ const pizza = {
 //CODE HERE
 
 const {price} = pizza;
-//console.log(`Price: $${price}`);
-//UNCOMMENT WHEN DONE
+console.log(`Price: $${price}`);
 /*
     Fourth, and last, destructure the category
     property.
@@ -87,7 +84,7 @@ const {price} = pizza;
 //CODE HERE
 
 const {category} = pizza;
-//console.log(`category: ${category}`);
+console.log(`category: ${category}`);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -160,7 +157,6 @@ const foodArr = [
 
 //CODE HERE
 
-//const filteredFood = foodArr.filter(tag) =>  
 function filteredFood (arr, tag) {
     const returnArr = [];
     for (let i = 0; i < arr.length; i++) {
@@ -171,11 +167,9 @@ function filteredFood (arr, tag) {
         }
     }
     return returnArr;
-
 }
 
-//console.log(filteredFood(foodArr, 'cheese'));
-//UNCOMMENT WHEN DONE
+console.log(filteredFood(foodArr, 'cheese'));
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -238,8 +232,4 @@ function filterByProperty (property, number, type) {
 //CODE HERE
 
 console.log(filterByProperty ('price', 10, 'below'));
-
-
-
-
 
