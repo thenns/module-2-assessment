@@ -51,8 +51,8 @@ const pizza = {
 
 //CODE HERE
 
-console.log(`The ${pizza.name} is rated ${pizza.rating}`);
-
+//console.log(`The ${pizza.name} is rated ${pizza.rating}`);
+//UNCOMMENT WHEN DONE
 /*
     Second, log the second tag in your pizza's
     tags array.
@@ -62,7 +62,8 @@ console.log(`The ${pizza.name} is rated ${pizza.rating}`);
 
 //CODE HERE
 
-console.log(`pizza tag: ${pizza.tags[1]}`);
+//console.log(`pizza tag: ${pizza.tags[1]}`);
+//UNCOMMENT WHEN DONE
 
 /*
     Third, destructure the price off of the
@@ -74,8 +75,8 @@ console.log(`pizza tag: ${pizza.tags[1]}`);
 //CODE HERE
 
 const {price} = pizza;
-console.log(`Price: $${price}`);
-
+//console.log(`Price: $${price}`);
+//UNCOMMENT WHEN DONE
 /*
     Fourth, and last, destructure the category
     property.
@@ -86,7 +87,7 @@ console.log(`Price: $${price}`);
 //CODE HERE
 
 const {category} = pizza;
-console.log(`category: ${category}`);
+//console.log(`category: ${category}`);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -173,8 +174,8 @@ function filteredFood (arr, tag) {
 
 }
 
-console.log(filteredFood(foodArr, 'cheese'));
-
+//console.log(filteredFood(foodArr, 'cheese'));
+//UNCOMMENT WHEN DONE
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -215,23 +216,17 @@ console.log(filteredFood(foodArr, 'cheese'));
 */
 
 //CODE HERE
-
 function filterByProperty (property, number, type) {
-    const filteredArr = [];
-    if (type.aboveOrBelow) {
-        console.log('this is true')
-    }
+    const filteredArr = foodArr.filter(function (cbFilter) {
+        if (type === 'above') {
+            return cbFilter.property >= number;
+        } else if (type === 'below') {
+            return cbFilter.property < number;
+        }
+    });
+    return filteredArr;
 }
-//this is the callback function for the above function
-//not done yet
-function aboveOrBelow (type) {
-    if (type === 'above') {
-        return true;
-    } else {
-        return false;
-    }
-}
-
+//i can't wrap my head around this logic, i'm sorry
 /*
  
     Invoke the `filterByProperty` function passing
@@ -241,4 +236,10 @@ function aboveOrBelow (type) {
 */
 
 //CODE HERE
-//still need to finish this
+
+console.log(filterByProperty ('price', 10, 'below'));
+
+
+
+
+
